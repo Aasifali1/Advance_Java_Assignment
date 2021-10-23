@@ -1,6 +1,6 @@
 package com.knoldus.kup.advanceJava.ques15;
 
-import com.knoldus.kup.Printer1;
+import com.knoldus.kup.Core_Java.Printer;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -10,6 +10,6 @@ public class GetModifiedTime {
         File file = new File("src/com/knoldus/kup/advanceJava/ques15/test.text");
         long time = file.lastModified();
         SimpleDateFormat formatter = new SimpleDateFormat ("yyyy/MM/dd H:mm");
-        Printer1.print("Last Modified Time: "+formatter.format(time));
+        Printer.print("Last Modified Time: "+formatter.format(time));
     }
 }
